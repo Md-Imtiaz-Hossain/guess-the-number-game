@@ -12,8 +12,12 @@
     <a href="http://www.google.com">Click to play</a>
 
 <!--Now adding thymeleaf operation -->
-    <h3>Now adding thymeleaf operation</h3>
-    <a th:text="Play"   href="http://www.google.com">Click to play</a>
+    <h3>Now adding thymeleaf operation (Just text)</h3>
+    <a th:text="Play" href="http://www.google.com">Click to play</a>
+
+
+    <h3>Now adding thymeleaf operation ( text + Link)</h3>
+    <a th:href="LinkIsHere" th:text="Play"></a>
 
 </body>
 </html>
