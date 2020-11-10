@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Guess the Number Game </title>
 </head>
 <body>
     <h1>Welcome the number guess game...</h1>
+
+<!--    No adding any thymeleaf operation -->
+    <h3>No adding any thymeleaf operation</h3>
     <a href="http://www.google.com">Click to play</a>
 
+<!--Now adding thymeleaf operation -->
+    <h3>Now adding thymeleaf operation</h3>
+    <a th:text="Play"   href="http://www.google.com">Click to play</a>
 
 </body>
 </html>
