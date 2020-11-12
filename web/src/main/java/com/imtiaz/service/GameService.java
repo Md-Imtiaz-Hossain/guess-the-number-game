@@ -5,7 +5,7 @@ public interface GameService {
     boolean isGameOver();
     String getMainMessage();
     String getResultMessage();
-    Void checkGuess(int guess);
+    void checkGuess(int guess);
     void reset();
 
 }

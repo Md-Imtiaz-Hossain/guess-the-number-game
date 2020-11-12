@@ -19,26 +19,27 @@ public class GameServiceImpl implements GameService {
 
     @Override
     public boolean isGameOver() {
-        return false;
+        return game.isGameWon() || game.isGameLost();
     }
 
     @Override
     public String getMainMessage() {
-        return null;
+        return messageGenerator.getMainMessage();
     }
 
     @Override
     public String getResultMessage() {
-        return null;
+        return messageGenerator.getResultMessage();
     }
 
     @Override
-    public Void checkGuess(int guess) {
-        return null;
+    public void checkGuess(int guess) {
+         game.setGuess(guess);
+         game.check();
     }
 
     @Override
     public void reset() {
-
+        game.reset();
     }
 }
