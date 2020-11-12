@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess the Number Game </title>
+</head>
+<body style="background-color:darkgray;">
+<div align="center">
+    <h1>Welcome the number guess game...</h1>
+
+    <!--/*@thymesVar id="mainMessage" type="com.imtiaz"*/-->
+    <h3 th:text="${mainMessage}">Main Message Content</h3>
+    <!--/*@thymesVar id="resultMessage" type="com.imtiaz"*/-->
+    <h3 th:text="${resultMessage}">Result Message Content</h3>
+
+
+    <form action="play.html" method="post">
+        <label for="guess">Enter Your Guess</label>
+        <input id="guess" type="number" name="guess">
+        <input type="submit" value="Submit">
+    </form>
+
+    <footer>
+        <p>Create By Teachy 5 Company</p>
+    </footer>
+
+</div>
+</body>
+</html>
