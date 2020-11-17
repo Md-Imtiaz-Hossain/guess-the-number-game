@@ -1,3 +1,8 @@
-com\imtiaz\config\WebConfig.class
+com\imtiaz\service\GameServiceImpl.class
 com\imtiaz\util\ViewNames.class
+com\imtiaz\util\AttributeNames.class
 com\imtiaz\WebMain.class
+com\imtiaz\config\WebConfig.class
+com\imtiaz\util\GameMappings.class
+com\imtiaz\controller\GameController.class
+com\imtiaz\service\GameService.class
