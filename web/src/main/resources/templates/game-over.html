@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess the Number Game </title>
+</head>
+<body style="background-color:darkgray;">
+<div align="center">
+    <h1>Guess The game...</h1>
+
+    <h2>Game Over</h2>
+
+    <h3 th:text="${__${T(com.imtiaz.util.AttributeNames).RESULT_MESSAGE}__}">Result Message Content</h3>
+
+    <h3>
+        <a th:href="@{__${T(com.imtiaz.util.GameMappings).RESTART}__}"
+           th:text="Play">
+            Play Again
+        </a>
+    </h3>
+
+    <h3>
+        <a th:href="@{__${T(com.imtiaz.util.GameMappings).HOME}__}"
+           th:text="Home">
+            Home
+        </a>
+    </h3>
+
+    <footer>
+        <p>Created By Teach 5 Company</p>
+    </footer>
+
+</div>
+</body>
+</html>
