@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/head :: headFragment}">
+<html lang="en">
+<head id="headId">
     <meta charset="UTF-8">
     <title>Play Game </title>
 </head>
@@ -8,17 +8,17 @@
 <div align="center">
     <h1>Welcome the number guess game...</h1>
 
-    <h3 th:text="${__${T(com.imtiaz.util.AttributeNames).MAIN_MESSAGE}__}">Main Message Content</h3>
-    <h3 th:text="${__${T(com.imtiaz.util.AttributeNames).RESULT_MESSAGE}__}">Result Message Content</h3>
+    <h3 id="main-Message" >Main Message Content</h3>
+    <h3 id="result-Message">Result Message Content</h3>
 
 
-    <form th:action="@{__${T(com.imtiaz.util.GameMappings).PLAY}__}" action="play" method="post">
+    <form id="game-Form" action="play" method="post">
         <label for="guess">Enter Your Guess</label>
         <input id="guess" type="number" name="guess">
         <input type="submit" value="Submit">
     </form>
 
-    <footer th:replace="~{fragments/footer :: footerFragment}">
+    <footer id="footerId">
         <p>Play Footer</p>
     </footer>
 

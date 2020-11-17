@@ -1,0 +1,26 @@
+<thlogic xmlns:th="http://www.thymeleaf.org">
+
+    <attr
+         sel="#headId"
+         th:replace="~{fragments/head :: headFragment}"
+    />
+
+    <attr
+            sel="#main-Message"
+            th:text="${__${T(com.imtiaz.util.AttributeNames).MAIN_MESSAGE}__}"
+    />
+
+    <attr
+            sel="#result-Message"
+            th:text="${__${T(com.imtiaz.util.AttributeNames).RESULT_MESSAGE}__}"
+    />
+
+    <attr
+            sel="#game-Form"
+            th:action="@{__${T(com.imtiaz.util.GameMappings).PLAY}__}"
+    />
+
+    <attr
+            sel="#footerId"
+            th:replace="~{fragments/footer :: footerFragment}"
+    /></thlogic>

@@ -1,4 +1,5 @@
 com\imtiaz\service\GameServiceImpl.class
+com\imtiaz\util\thymeleaf\DecoupledLogicSetup.class
 com\imtiaz\util\ViewNames.class
 com\imtiaz\util\AttributeNames.class
 com\imtiaz\WebMain.class
