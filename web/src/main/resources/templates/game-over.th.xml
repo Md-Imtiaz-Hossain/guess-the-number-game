@@ -1,29 +1,20 @@
 <thlogic xmlns:th="http://www.thymeleaf.org">
 
-    <attr
-         sel="#headId"
-         th:replace="~{fragments/head :: headFragment}"
-    />
+    <attr sel="#headId"
+             th:replace="~{fragments/head :: headFragment}"    />
 
-    <attr
-            sel="#result-Message"
-            th:text="${__${T(com.imtiaz.util.AttributeNames).RESULT_MESSAGE}__}"
-    />
+    <attr sel="#result-Message"
+            th:text="${__${T(com.imtiaz.util.AttributeNames).RESULT_MESSAGE}__}"    />
 
-    <attr
-            sel="#play_again"
+    <attr sel="#play_again"
             th:href="@{__${T(com.imtiaz.util.GameMappings).RESTART}__}"
-            th:text="Play"
-    />
+            th:text="Play"    />
 
-    <attr
-            sel="#go_home"
+    <attr sel="#go_home"
             th:href="@{__${T(com.imtiaz.util.GameMappings).HOME}__}"
-            th:text="Home"
-    />
+            th:text="Home"    />
 
 
-    <attr
-            sel="#footerId"
-            th:replace="~{fragments/footer :: footer}"
-    /></thlogic>
+    <attr sel="#footerId"
+            th:replace="~{fragments/footer :: footerFragment}"    />
+</thlogic>
