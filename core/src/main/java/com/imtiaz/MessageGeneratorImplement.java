@@ -37,7 +37,7 @@ public class MessageGeneratorImplement implements MessageGenerator {
     public String getResultMessage() {
 
         if (game.isGameWon()){
-            return "You guess it! The number waw " + game.getNumber();
+            return "You guess it! The number was " + game.getNumber();
         }else if (game.isGameLost()){
             return "You lost. The Number was " + game.getNumber();
         }else if (!game.isValidNumberRange()){
