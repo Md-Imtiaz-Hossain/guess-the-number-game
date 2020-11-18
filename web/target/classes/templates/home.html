@@ -1,22 +1,44 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/head :: headFragment}">
+<html lang="en" >
+<head id="headId">
     <meta charset="UTF-8">
     <title>Title Content </title>
 </head>
 <body style="background-color:darkgray;">
 <div align="center">
     <h1>Welcome the number guess game...</h1>
-    <h3>Now adding thymeleaf operation ( text + Link)</h3>
-    <a th:href="@{__${T(com.imtiaz.util.GameMappings).PLAY}__}"
-       th:text="Play"
-        href="play.html">
-        Click To Play
-    </a>
 
-    <footer th:replace="~{fragments/footer :: footerFragment}">
+    <h3>
+        <a id="play"
+           href="play.html">
+            Click To Play
+        </a>
+    </h3>
+
+
+    <footer id="footerId">
         <p>Home Footer</p>
     </footer>
 </div>
 </body>
 </html>
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head id="headId">-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title content</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div align="center">-->
+<!--    <h1>Welcome to Guess the Number Game</h1>-->
+<!--    <h3>-->
+<!--        <a id="play-game"-->
+<!--           href="play.html">-->
+<!--            Click to Play-->
+<!--        </a>-->
+<!--    </h3>-->
+<!--    <div id="footerId">Footer goes here</div>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->

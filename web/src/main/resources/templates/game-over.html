@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/head :: headFragment}">
+<html lang="en" >
+<head id="headId">
     <meta charset="UTF-8">
     <title>Game finish </title>
 </head>
@@ -10,23 +10,21 @@
 
     <h2>Game Over</h2>
 
-    <h3 th:text="${__${T(com.imtiaz.util.AttributeNames).RESULT_MESSAGE}__}">Result Message Content</h3>
+    <h3 id="result-Message">Result Message Content</h3>
 
     <h3>
-        <a th:href="@{__${T(com.imtiaz.util.GameMappings).RESTART}__}"
-           th:text="Play">
+        <a id="play_again">
             Play Again
         </a>
     </h3>
 
     <h3>
-        <a th:href="@{__${T(com.imtiaz.util.GameMappings).HOME}__}"
-           th:text="Home">
+        <a id="go_home" >
             Home
         </a>
     </h3>
 
-    <footer th:replace="~{fragments/footer :: footerFragment}">
+    <footer id="footerId">
         <p>Game Over Footer</p>
     </footer>
 

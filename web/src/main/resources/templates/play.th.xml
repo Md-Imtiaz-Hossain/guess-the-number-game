@@ -1,26 +1,31 @@
 <thlogic xmlns:th="http://www.thymeleaf.org">
 
-    <attr
-         sel="#headId"
-         th:replace="~{fragments/head :: headFragment}"
-    />
+    <attr    sel="#headId"
+             th:replace="~{fragments/head :: headFragment}"     />
 
-    <attr
-            sel="#main-Message"
-            th:text="${__${T(com.imtiaz.util.AttributeNames).MAIN_MESSAGE}__}"
-    />
+    <attr   sel="#main-Message"
+            th:text="${__${T(com.imtiaz.util.AttributeNames).MAIN_MESSAGE}__}"    />
 
-    <attr
-            sel="#result-Message"
-            th:text="${__${T(com.imtiaz.util.AttributeNames).RESULT_MESSAGE}__}"
-    />
+    <attr   sel="#result-Message"
+            th:text="${__${T(com.imtiaz.util.AttributeNames).RESULT_MESSAGE}__}"    />
 
-    <attr
-            sel="#game-Form"
-            th:action="@{__${T(com.imtiaz.util.GameMappings).PLAY}__}"
-    />
+    <attr   sel="#game-Form"
+            th:action="@{__${T(com.imtiaz.util.GameMappings).PLAY}__}"    />
 
-    <attr
-            sel="#footerId"
-            th:replace="~{fragments/footer :: footerFragment}"
-    /></thlogic>
+    <attr   sel="#footerId"
+            th:replace="~{fragments/footer :: footerFragment}"    />
+</thlogic>
+
+<!--<thlogic xmlns:th="http://www.thymeleaf.org">-->
+<!--    <attr sel="#headId"-->
+<!--          th:replace="~{fragments/head :: headFragment}"/>-->
+<!--    <attr sel="#main-message"-->
+<!--          th:text="${__${T(com.imtiaz.util.AttributeNames).MAIN_MESSAGE}__}"/>-->
+<!--    <attr sel="#result-message"-->
+<!--          th:text="${__${T(com.imtiaz.util.AttributeNames).RESULT_MESSAGE}__}"/>-->
+<!--    <attr sel="#game-form"-->
+<!--          th:action="@{__${T(com.imtiaz.util.GameMappings).PLAY}__}"/>-->
+<!--    <attr sel="#footerId"-->
+<!--          th:replace="~{fragments/footer :: footer}"/>-->
+<!--</thlogic>-->
+
