@@ -1,7 +1,8 @@
 <thlogic xmlns:th="http://www.thymeleaf.org">
     <attr
             sel="#footerId"
-            th:fragment="footerFragment"
-    />
+            th:fragment="footerFragment"/>
+
+    <attr sel="#create-by" th:text="| The Teach 5 Company #{game.createdBy}|" />
 </thlogic>
 
