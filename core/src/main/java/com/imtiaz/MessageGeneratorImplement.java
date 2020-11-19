@@ -1,6 +1,7 @@
 package com.imtiaz;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -12,11 +13,13 @@ public class MessageGeneratorImplement implements MessageGenerator {
 
     // === Fields ===
     private final Game game;
+    private final MessageSource messageSource;
 
 
     // === Constructor ===
-    public MessageGeneratorImplement(Game game) {
+    public MessageGeneratorImplement(Game game, MessageSource messageSource) {
         this.game = game;
+        this.messageSource = messageSource;
     }
 
 
