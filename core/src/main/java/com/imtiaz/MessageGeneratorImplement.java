@@ -37,11 +37,14 @@ public class MessageGeneratorImplement implements MessageGenerator {
     // === public methods ===
     @Override
     public String getMainMessage() {
-        return "Number is between "
-                + game.getSmallest()
-                + " and "
-                + game.getBiggest()
-                + ". Can you guess it? ";
+
+        return getMessage(MAIN_MESSAGE, game.getSmallest(), game.getBiggest());
+
+        //        return "Number is between "
+//                + game.getSmallest()
+//                + " and "
+//                + game.getBiggest()
+//                + ". Can you guess it? ";
     }
 
     @Override
