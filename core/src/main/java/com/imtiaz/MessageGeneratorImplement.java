@@ -11,6 +11,9 @@ import javax.annotation.PostConstruct;
 @Component
 public class MessageGeneratorImplement implements MessageGenerator {
 
+    // === Constant ===
+    private static final String MAIN_MESSAGE = "game.main.message";
+
 
     // === Fields ===
     private final Game game;
