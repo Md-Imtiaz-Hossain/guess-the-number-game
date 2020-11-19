@@ -3,9 +3,11 @@
     <attr sel="#headId"
              th:replace="~{fragments/head :: headFragment}"    />
 
+    <attr sel="#welcome-text" th:text="#{game.title}"/>
+
     <attr sel="#play"
             th:href="@{__${T(com.imtiaz.util.GameMappings).PLAY}__}"
-            th:text="Play"    />
+          th:text="#{game.playAgain}"     />
 
     <attr sel="#footerId"
             th:replace="~{fragments/footer :: footerFragment}"    />
