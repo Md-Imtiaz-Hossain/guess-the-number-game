@@ -2,6 +2,7 @@ package com.imtiaz;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.MessageSource;
+import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -60,4 +61,10 @@ public class MessageGeneratorImplement implements MessageGenerator {
             return direction + "! You Have " + game.getRemainingGuesses() + " Guesses Left" ;
         }
     }
+
+    // === private message ===
+    private String getMessage(String code, Object... args){
+        return messageSource.getMessage(code, args, LocaleContextHolder.getLocale());
+    }
+
 }
