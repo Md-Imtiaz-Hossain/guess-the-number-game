@@ -23,6 +23,7 @@ public class MessageGeneratorImplement implements MessageGenerator {
 
 
 
+
     // === Fields ===
     private final Game game;
     private final MessageSource messageSource;
