@@ -6,4 +6,5 @@ com\imtiaz\WebMain.class
 com\imtiaz\config\WebConfig.class
 com\imtiaz\util\GameMappings.class
 com\imtiaz\controller\GameController.class
+com\imtiaz\interceptor\RequestInterceptor.class
 com\imtiaz\service\GameService.class
