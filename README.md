@@ -2,7 +2,9 @@
 guess-the-number-game
 
 ## Used Language & Framework- 
-Spring Boot
+Spring Boot,
+Thymleaf, 
+HTML,
 Maven
 
 ## Purpose-
